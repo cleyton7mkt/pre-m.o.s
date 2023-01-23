@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Método de Obsesión Secreta</title>
+<link rel="shortcut icon" href="./files/favicon.ico">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Cabin&family=Montserrat&family=Open+Sans&family=Oswald&display=swap" rel="stylesheet">
+<style>
+    header {
+      background: url("./files/headerbg2.png");
+      background-repeat: no-repeat;
+    }
+    
+    h1 {
+      font-size: 145.99%;
+      margin: 1.2%;
+      font-family: 'Montserrat';
+      margin-bottom: 20px;
+      margin-top: 26px;
+
+    }
+    .a-btn {
+      text-decoration: none;
+      -webkit-font-smoothing: antialiased;
+      margin: 0;
+      border: 0; 
+      font: inherit; 
+      vertical-align: baseline;
+      color: #00ff40; 
+      outline: 0; 
+      line-height: 1.3; 
+      text-align: center; 
+      position:relative!important; display: inline-block!important;
+      border-style: solid; 
+      width: 101%; padding-left: 0!important; padding-right: 0!important; 
+      margin-bottom: 10px; 
+      margin-top: 15px;
+      padding: 12px 490px; border-color: #ff5535; border-width: 0px; 
+      border-radius: 5px; 
+      background: linear-gradient(to bottom, #ff0000 0%, #ff3535 100%); 
+      box-shadow: 0px 1px 1px 0px rgba(0, 255, 34, 0.5); 
+      text-decoration: none!important;
+    }
+
+    .span-btn {
+      text-decoration: none;
+      -webkit-font-smoothing: antialiased; 
+      text-align: center;
+      margin: 0; 
+      border: 0; 
+      font: inherit;
+      vertical-align: baseline;
+      display: block; 
+      position: relative; 
+      z-index: 1; 
+      padding: 0 15px; 
+      white-space: normal; 
+      font-size: 15px;
+      color: #ffffff; 
+      font-family: 'Montserrat'; 
+      font-weight: bolder;
+      text-shadow: #000000 0px 1px 0px;
+      text-decoration: none;
+    }
+    .span-btn2 {
+      -webkit-font-smoothing: antialiased; 
+      text-align: center;
+      padding: 0; border: 0;
+      font: inherit; 
+      vertical-align: baseline; 
+      display: block; 
+      position: relative;
+      z-index: 1; 
+      margin: .2em 0 -.5em; 
+      font-size: 15px; 
+      color: #f5e051; 
+      font-family: Cabin; 
+      font-weight: bold; 
+      font-style: italic;
+      text-shadow: #000000 0px 1px 0px;
+    }
+
+    .cards-1{
+        width: 100%;
+        margin: 0;
+        margin-top: 2px;
+        margin-bottom: 8px;
+    }
+    .comments {
+      background-color: #F6F7F9;
+    }
+    .comment {
+      display: block; 
+      padding: 10px 0; 
+      line-height: 20px;
+    }
+    .span {
+      color: #365899; 
+      font-weight: bold;
+    }
+    .answer {
+      color: #444; 
+      -webkit-font-smoothing: antialiased;
+      margin: 0; 
+      padding: 0; 
+      border: 0; 
+      font: inherit; 
+      vertical-align: baseline; 
+      display: block; 
+      padding-top: 10px; 
+      line-height: 20px;
+      padding-left: 9px; 
+      border-left: 1px solid #E9EBEE; margin-left: 50px; padding-bottom: 0;
+    }
+    .classeNova {
+      color: #444; 
+      -webkit-font-smoothing: antialiased; 
+      margin: 0; 
+      padding: 0; 
+      border: 0; 
+      font: inherit; 
+      vertical-align: baseline;
+      font-family: Arial; 
+      background-color:
+      #F6F7F9;
+      font-size: 14px; 
+      padding-top: 20px;     
+    }
+    .paragrafo {
+      color: #444; 
+      font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+      line-height: 1.5em; 
+      margin: 0;
+      margin-left: 60px; 
+      margin-bottom: 0px;
+    }
+    .like {
+      font-size: 11px; color: #90949c;
+    }
+    .twenty1 {
+      font-weight: 700; 
+      border-bottom: 1px solid #E9EBEE; 
+      display: block; 
+      padding-bottom: 6px;
+    }
+    .imgComment {
+      width: 60px; 
+      height: 50px; 
+      float: left; 
+      padding-right: 10px;
+    }
+    .hide {
+      display: none;
+    }
+    .pirataria h3 {
+      text-transform: uppercase;
+      font-size: 15px;
+      letter-spacing: 5px;
+    }
+    .pirataria b{
+      color: #FFC400;
+    }
+    .pirataria {
+      font-size: 12px;
+      text-align: justify;
+    }
+    footer {
+      background-color: black;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      color: white;
+    }
+    .cpy {
+      font-size: 12px;
+      margin: 37px 0px 20px 0px;
+    }
+    .links a {
+      font-size: 12px;
+      color: white;
+    }
+
+    .img-fluid{
+      width: 79%;
+      margin-top: 10px;
+    }
+
+    h3{
+      font-size: 80%;
+      margin: 1.2%;
+      font-family: 'Montserrat';
+      margin-bottom: 10px;
+      margin-top: 16px;
+    }
+  </style>
+
+</head>
+<body>
+
+<header class="py-3">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-8 text-center">
+<img src="./files/ultrasecreto4.png" class="img-fluid">
+
+<h1>HAZ QUE ÉL SE OBSESIONE CONTIGO CON <b><font color="red">12 PALABRAS FLECHAZO</font></b></h1>
+<script src="https://fast.wistia.com/embed/medias/9ix0x8ymh5.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_9ix0x8ymh5 videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/9ix0x8ymh5/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+
+<h3>🔈 Por favor, compruebe que el audio está activado!</h3>
+
+<div class="mt-3 mb-4 text-center hide" id="btn">
+    <a href="https://pay.hotmart.com/W51785242S" class="a-btn" style="text-decoration: none;">
+      <span class="span-btn">QUIERO ACCEDER AL OBSESIÓN SECRETA!</span>
+      <span class="span-btn2">(atención: plazas limitadas)</span>
+    </a>
+    <div class="cards-1">
+    <a href="https://pay.hotmart.com/W51785242S?"><img class="img-fluid" src="./files/cards/card.png"></img></a>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+</header>
+<section class="comments">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-8">
+<div class="classeNova">
+<span class="twenty1">
+21 comentários
+</span>
+
+<div class="comment">
+<span class="span">
+<img src="./files/profiles/claudia-silva.jpeg" class="imgComment">
+Michele
+dijo</span>
+<p class="paragrafo">
+  ¡Feliz también! ¡Gracias Francisco, pensé que la guía no funcionaría pq ya había hecho de todo para ganar un chico, pero ms mesmo queria tentar e olha ahora parece que soy otra persona. gracias!</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+
+<div class="comment">
+<span class="span">
+<img src="./files/profiles/2.jpeg" class="imgComment">Raquel
+dijo</span>
+<p class="paragrafo">
+No me lo puedo creer, al segundo día volvió corriendo hacia mí. Ha sido la mejor inversión que he hecho este año....</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+
+<div class="comment">
+<span class="span">
+<img src="./files/profiles/3.jpeg" class="imgComment">Juliana
+dijo</span>
+<p class="paragrafo">
+  Le tenía mucho cariño a un compañero de trabajo, pero no sabía cómo llamarlo. No quería quemar mis oportunidades con él. Y no sabía cómo acercarme a elle. Conocí a este guía y usé los mensajes principales kkk... ahora no me deja el pie 😘</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+
+<div class="comment">
+<span class="span">
+<img src="./files/profiles/bruna.jpeg" class="imgComment">Luisa
+dijo</span>
+<p class="paragrafo">
+  ¡Realmente necesitaba este programa, he encontrado el botón para conseguir irresistible y mucho más atractivo 😀 Me encanta cómo mi marido es más atento. gracias Francisco!</p>
+ <span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+
+<div class="comment">
+<span class="span">
+<img src="./files/profiles/5.jpeg" class="imgComment">Heloisa
+dijo</span>
+<p class="paragrafo">
+  Francisco deberías vender esta guía por un millón ¡realmente funciona! ¡¡¡¡Ya había hecho todo lo posible e incluso pensé que nunca lo conseguiría. gracias a ti tengo al hombre que siempre soñé, gracias !!!!</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+
+<div class="comment">
+<span class="span">
+<img src="./files/profiles/josiane.jpeg" class="imgComment">Claudia
+Silva dijo</span>
+<p class="paragrafo">
+  Mi vida cambió del día a la noche. Gracias por la guía Francisco...kkk busqué un mensaje, lo tomé, copié y envié...le di a Match ❤️ Dios te bendiga...</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+
+<div class="comment">
+<span class="span">
+<img src="./files/profiles/7.jpeg" class="imgComment">
+Kelly
+dijo</span>
+<p class="paragrafo">
+  Aiii Francisco, me encanta. Gracias por cambiar la vida de tantas mujeres, como yo, están desesperadas por encontrar una solución.</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+
+<div class="comment">
+<span class="span">
+<img src="./files/profiles/8.jpeg" class="imgComment">Ana
+Julia dijo</span>
+<p class="paragrafo">
+  He probado de todo en los últimos 6 meses para llamar la atención de un chico, ¿funciona?</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+
+    <div class="answer comment">
+    <span class="span">
+    <img src="./files/profiles/9.jpeg" class="imgComment">Marcela
+    dijo</span>
+    <p class="paragrafo">
+      El tipo que me gustaba vivía en el pueblo de al lado... Y ahora, ¿adivina qué? Me está suplicando que me mude allí y viva con él 😁 kkkk... No tenía ni idea de que esta guía sería tan poderosa, ¡es muy loca!  </p>
+    <span class="like">Responder
+    · Curtir · Seguir · 3 min</span>
+    </div>
+
+    <div class="answer comment">
+    <span class="span">
+    <img src="./files/profiles/10.jpeg" class="imgComment">Paula
+    dijo</span>
+    <p class="paragrafo">
+      Yo era como la mujer del vídeo... estaba muy necesitada y desesperada en mis relaciones amorosas, gracias al programa recuperé mi vida.</p>
+    <span class="like">Responder
+    · Curtir · Seguir · 3 min</span>
+    </div>
+
+    <div class="answer comment">
+    <span class="span">
+    <img src="./files/profiles/8.jpeg" class="imgComment">Ana
+    Julia dijo</span>
+    <p class="paragrafo">
+      Obgda gente, lo probaré 🙂 </p>
+    <span class="like">Responder
+    · Curtir · Seguir · 3 min</span>
+    </div>
+</div>
+
+<div class="comment">
+<span class="span">
+<img src="./files/profiles/11.jpeg" class="imgComment">Andressa
+dijo</span>
+<p class="paragrafo">
+  Pensé que era mentira o una estafa, hasta que decidí probar... Me sentía mal, decaída y me deprimía por la falta de hombres. Tuve que tomar algunos medicamentos para ayudar. Pero con este manual... ¡He conseguido lo que parecía imposible! </p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+
+<div class="comment">
+<span class="span">
+<img src="./files/profiles/12.jpeg" class="imgComment">Jessica
+dijo</span>
+<p class="paragrafo">
+  Chicas, tengo miedo de gastar dinero y que no salga bien 🙁</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+    <div class="answer comment">
+    <span class="span">
+    <img src="./files/profiles/13.jpeg" class="imgComment">Yasmin
+    dijo</span>
+    <p class="paragrafo">
+      Yo pensaba lo mismo, pero lo compraría 10 veces después de ver que funciona 🙂 ¡Vamos a por el hombre de nuestros sueños! Nos lo merecemos después de luchar tanto</p>
+    <span class="like">Responder
+    · Curtir · Seguir · 3 min</span>
+    </div>
+    <div class="answer comment">
+    <span class="span">
+    <img src="./files/profiles/14.jpeg" class="imgComment">Bruna
+    dijo</span>
+    <p class="paragrafo">
+      ¡Sí funciona, flor! Puedes creerlo. Lo he probado todo, este programa ha sido lo mejor que me ha pasado nunca</p>
+    <span class="like">Responder
+    · Curtir · Seguir · 3 min</span>
+    </div>
+</div>
+<div class="comment">
+<span class="span">
+<img src="./files/profiles/15.jpeg" class="imgComment">Claudia
+dijo</span>
+<p class="paragrafo">
+  Nuestro Francisco... ¡pasaba por aquí para darle las gracias de todo corazón! El chico que estaba buscando me acaba de llamar y no puedo creer que vaya a salir con él esta noche.</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+<div class="comment">
+<span class="span">
+<img src="./files/profiles/16.jpeg" class="imgComment">Gabriela
+dijo</span>
+<p class="paragrafo">
+  ¡Francisco vc es casi dar gratis, por tan barato! @livvi4_1992 este que te he dicho me ha funcionado. ¡Puedes acceder!</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+<div class="comment">
+<span class="span">
+<img src="./files/profiles/17.jpeg" class="imgComment">Aline
+dijo</span>
+<p class="paragrafo">
+Acabei de me pesar!!!! Ahhhh não acredito ta funcionando!!! Já perdi 3 quilos 🙈</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+<div class="comment">
+<span class="span">
+<img src="./files/profiles/18.jpeg" class="imgComment">Nicole
+dijo</span>
+<p class="paragrafo">
+  ¡Compré la guía y está funcionando demasiado! Estoy haciendo todo lo que dice en la guía... y después volveré y os contaré cómo han sido mis conquistas. Gracias Francisco 😘
+</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+<div class="answer comment">
+<span class="span">
+<img src="./files/profiles/19.jpeg" class="imgComment">
+Vitória
+dijo</span>
+<p class="paragrafo">
+  ¿Funciona de verdad?</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+<div class="answer comment">
+<span class="span">
+<img src="./files/profiles/18.jpeg" class="imgComment">Ana Clara
+dijo</span>
+<p class="paragrafo">
+  Apliqué todo lo que hay en la guía desde que lo compré y quedó exactamente como en el video. Los hombres están empezando a coquetear conmigo y mostrar signos de interés en mí lol 😁❤️</p>
+<span class="like">Responder
+· Curtir · Seguir · 3 min</span>
+</div>
+</div>
+</div>
+
+<div class="mt-3 mb-4 text-center hide" id="btn2">
+  <a href="https://pay.hotmart.com/W51785242S" class="a-btn" style="text-decoration: none;">
+    <span class="span-btn">QUIERO ACCEDER AL OBSESIÓN SECRETA!</span>
+    <span class="span-btn2">(atención: plazas limitadas)</span>
+  </a>
+  <div class="cards-1">
+  <a href="https://pay.hotmart.com/W51785242S?"><img class="img-fluid" src="./files/cards/card.png"></img></a>
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-md-6 pirataria">
+<h3> Piratería es <b>CRIMEN</b></h3>
+El Método Secreto de la Obsesión sólo puede venderse a través de este sitio, registrado a nombre de Método de la Obsesión Secreta. 
+Cualquier otro sitio donde encuentre este programa es una FALSIFICACIÓN y va en contra de las leyes. 
+Evite las falsificaciones y rechace los contenidos ilegales o pirateados. 
+NO compre programas similares que no estén basados en años de estudio en comportamiento psicología del comportamiento. 
+No nos hacemos responsables de las compras realizadas en otros sitios web.
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="row cpy">
+<div class="col text-center">
+Copyright 2020 - Método de Obsesión Secreta ®<br>
+Todos los derechos reservados | JMA COMPANY
+</div>
+</div>
+<div class="row links">
+<div class="col text-center">
+<a href="#" target="_blank">Condiciones de uso |</a>
+<a href="#" target="_blank">Política de privacidad | Aviso legal</a>
+</div>
+</div>
+</div>
+</div>
+
+  <div class="row justify-content-center">
+    <div class="col-md-12 text-center" style="font-size: 11px; padding: 40px 0px 20px 0px; color: #b7adad;">
+      <b>Este sitio no está afiliado a Facebook ni a ninguna entidad de Facebook. 
+        Una vez que abandonas Facebook, la responsabilidad no recae en ellos, sino en nuestro sitio. 
+        Hacemos todo lo posible por indicar claramente y mostrar todas las pruebas del producto y utilizar resultados reales. 
+        No vendemos su correo electrónico ni ninguna otra información a terceros. Nunca le enviaremos spam de ningún tipo. 
+        Si tiene alguna pregunta, no dude en utilizar el enlace de contacto y hablar con nosotros en horario comercial de lunes a viernes de 8.00 a 18.00 horas. 
+        Leemos y respondemos a todos los mensajes por orden de llegada.
+      </b>
+    </div>
+  </div>
+</div>
+</footer>
+
+  <script>
+        function showBtn () {
+          document.getElementById("btn").classList.remove("hide")
+        }
+        setTimeout(showBtn, 120*1000)
+
+        function showBtn2 () {
+          document.getElementById("btn2").classList.remove("hide")
+        }
+        
+        setTimeout(showBtn2, 120*1000)
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script language="JavaScript" src="https://ssl.geoplugin.net/javascript.gp?k=292af9fb00c1353d" type="text/javascript"></script>
+
+</body>
+</html>
